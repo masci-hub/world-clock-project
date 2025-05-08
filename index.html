@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.47/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock App</title>
   </head>
   <body>
@@ -18,19 +20,19 @@
           <option>Tokyo</option>
         </select>
       </form>
-      <div class="current-city">
+      <div class="city" id="rome">
         <div>
           <h2>Rome</h2>
-          <div class="current-date">May 7th 2025</div>
+          <div class="date"></div>
         </div>
-        <div class="current-time">11:45 <small>AM</small></div>
+        <div class="time"><small></small></div>
       </div>
-      <div class="current-city">
+      <div class="city" id="new-york">
         <div>
           <h2>New York</h2>
-          <div class="current-date">May 7th 2025</div>
+          <div class="date"></div>
         </div>
-        <div class="current-time">11:45 <small>AM</small></div>
+        <div class="time"><small></small></div>
       </div>
     </div>
     <footer>

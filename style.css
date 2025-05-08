@@ -35,7 +35,7 @@ footer {
   padding: 30px;
 }
 
-.current-city {
+.city {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
@@ -43,20 +43,20 @@ footer {
   padding: 25px 5px;
 }
 
-.current-city:last-child {
+.city:last-child {
   border: none;
 }
 
-.current-date {
+.date {
   opacity: 0.8;
 }
 
-.current-time {
+.time {
   font-size: 48px;
   font-weight: bold;
 }
 
-.current-time small {
+.time small {
   font-size: 24px;
   vertical-align: middle;
 }
