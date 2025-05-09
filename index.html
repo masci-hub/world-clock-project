@@ -12,27 +12,22 @@
     <div class="container">
       <h1>World Clock</h1>
       <form>
-        <select>
-          <option>Choose a city</option>
-          <option>Dublin</option>
-          <option>Los Angeles</option>
-          <option>Sydney</option>
-          <option>Tokyo</option>
+        <select id="city-select">
+          <option hidden>Choose a city</option>
+          <option value="America/New_York">New York</option>
+          <option value="America/Los_Angeles">Los Angeles</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Asia/Tokyo">Tokyo</option>
         </select>
       </form>
-      <div class="city" id="rome">
-        <div>
-          <h2>Rome</h2>
-          <div class="date"></div>
+      <div id="city">
+        <div class="city" id="rome">
+          <div>
+            <h2>Rome</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"><small></small></div>
         </div>
-        <div class="time"><small></small></div>
-      </div>
-      <div class="city" id="new-york">
-        <div>
-          <h2>New York</h2>
-          <div class="date"></div>
-        </div>
-        <div class="time"><small></small></div>
       </div>
     </div>
     <footer>
