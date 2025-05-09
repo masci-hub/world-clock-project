@@ -3,10 +3,36 @@ function displayTime() {
   if (romeElement) {
     let romeDateElement = romeElement.querySelector(".date");
     let romeTimeElement = romeElement.querySelector(".time");
-    let rome = moment().tz("Europe/Rome");
+    let romeTimeZone = moment().tz("Europe/Rome");
 
-    romeDateElement.innerHTML = rome.format("MMMM Do YYYY");
-    romeTimeElement.innerHTML = rome.format("h:mm:ss [<small>]A[</small>]");
+    romeDateElement.innerHTML = romeTimeZone.format("MMMM Do YYYY");
+    romeTimeElement.innerHTML = romeTimeZone.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  let newYorkElement = document.querySelector("#new-york");
+  if (newYorkElement) {
+    let newYorkDateElement = newYorkElement.querySelector(".date");
+    let newYorkTimeElement = newYorkElement.querySelector(".time");
+    let newYorkTimeZone = moment().tz("America/New_York");
+
+    newYorkDateElement.innerHTML = newYorkTimeZone.format("MMMM Do YYYY");
+    newYorkTimeElement.innerHTML = newYorkTimeZone.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  let londonElement = document.querySelector("#london");
+  if (londonElement) {
+    let londonDateElement = londonElement.querySelector(".date");
+    let londonTimeElement = londonElement.querySelector(".time");
+    let londonTimeZone = moment().tz("Europe/London");
+
+    londonDateElement.innerHTML = londonTimeZone.format("MMMM Do YYYY");
+    londonTimeElement.innerHTML = londonTimeZone.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 }
 
@@ -28,7 +54,8 @@ function changeCity(event) {
             <div class="date">${date}</div>
           </div>
           <div class="time">${time}</div>
-        </div>`;
+        </div>
+        <a href="https://world-clock-project-tqng.onrender.com/">Reset</a>`;
   setTimeout(() => {
     changeCity(event);
   }, 1000);
