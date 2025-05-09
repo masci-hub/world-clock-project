@@ -26,6 +26,10 @@ footer {
   text-align: center;
 }
 
+a {
+  line-height: 24px;
+}
+
 .container {
   background-color: white;
   border-radius: 8px;
