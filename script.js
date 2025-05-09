@@ -29,6 +29,9 @@ function changeCity(event) {
           </div>
           <div class="time">${time}</div>
         </div>`;
+  setTimeout(() => {
+    changeCity(event);
+  }, 1000);
 }
 
 let citySelect = document.querySelector("#city-select");
